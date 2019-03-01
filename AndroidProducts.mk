@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/rr_markw.mk
+    $(LOCAL_DIR)/havoc_markw.mk

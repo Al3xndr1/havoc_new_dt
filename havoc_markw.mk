@@ -18,11 +18,13 @@
 # Inherit from markw device
 $(call inherit-product, device/xiaomi/markw/full_markw.mk)
 
-# Inherit some common RR stuff.
-$(call inherit-product, vendor/rr/config/common_full_phone.mk)
+# Inherit some common Havoc stuff.
+$(call inherit-product, vendor/havoc/config/common.mk)
+
+export HAVOC_BUILD_TYPE=Official
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := rr_markw
+PRODUCT_NAME := havoc_markw
 BOARD_VENDOR := Xiaomi
 PRODUCT_DEVICE := markw
 
